@@ -230,6 +230,7 @@ class Hook {
 				'do_action',
 				'do_action_ref_array',
 				'do_action_deprecated',
+				'cfw_get_action_output',
 			),
 			true
 		);
