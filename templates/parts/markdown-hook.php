@@ -96,14 +96,14 @@ printf(
 		//$documentor->relative( $hook->get_file() ) // disable links
 	),
 	\sprintf(
-		'[line %s](%s)',
+		'line %s', //'[line %s](%s)',
 		$hook->get_start_line(),
-		\sprintf(
-			'%s#L%d-L%d',
-			$documentor->relative( $hook->get_file() ),
-			$hook->get_start_line(),
-			$hook->get_end_line()
-		)
+//		\sprintf(
+//			'%s#L%d-L%d',
+//			$documentor->relative( $hook->get_file() ),
+//			$hook->get_start_line(),
+//			$hook->get_end_line()
+//		)
 	)
 );
 
