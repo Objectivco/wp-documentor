@@ -91,9 +91,9 @@ if ( null !== $changelog && \count( $changelog ) > 0 ) {
 printf(
 	'Source: %s, %s',
 	\sprintf(
-		'[%s](%s)',
+		'%s', //'[%s](%s)',
 		$hook->get_file()->getPathname(),
-		$documentor->relative( $hook->get_file() )
+		//$documentor->relative( $hook->get_file() ) // disable links
 	),
 	\sprintf(
 		'[line %s](%s)',
